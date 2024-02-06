@@ -1,0 +1,557 @@
+{
+	"info": {
+		"_postman_id": "ee75d55e-0ee3-4532-9d67-19af050a0c85",
+		"name": "Movie Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Crews",
+			"item": [
+				{
+					"name": "index",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/v1/crew?page=1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"crew"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/v1/crew/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"crew",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Matthew",
+									"type": "text"
+								},
+								{
+									"key": "family",
+									"value": "Vaughn",
+									"type": "text"
+								},
+								{
+									"key": "role",
+									"value": "Director",
+									"type": "text"
+								},
+								{
+									"key": "birthdate",
+									"value": "1971-07-13",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/crew",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"crew"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"id\":1,\"name\":\"Benjamin\",\"family\":\"Renner\",\"role\":\"Directors\",\"birthdate\":\"1992-12-01\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/crew/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"crew",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/api/v1/crew/8",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"crew",
+								"8"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Genres",
+			"item": [
+				{
+					"name": "index",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/v1/genre",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"genre"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/v1/genre/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"genre",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Comedy",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/genre",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"genre"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Comedy\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/genre/4",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"genre",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/api/v1/genre/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"genre",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Movies",
+			"item": [
+				{
+					"name": "index",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/v1/movie?page=1&sort=rank:asc",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"movie"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "search",
+									"value": "Migration",
+									"disabled": true
+								},
+								{
+									"key": "sort",
+									"value": "rank:asc"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "Argylle",
+									"type": "text"
+								},
+								{
+									"key": "rank",
+									"value": "60",
+									"type": "text"
+								},
+								{
+									"key": "year",
+									"value": "2024",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "A reclusive author who writes espionage novels about a secret agent and a global spy syndicate realizes the plot of the new book she's writing starts to mirror real-world events, in real time.",
+									"type": "text"
+								},
+								{
+									"key": "slug",
+									"value": "argylle",
+									"type": "text"
+								},
+								{
+									"key": "genres[]",
+									"value": "Action",
+									"type": "text"
+								},
+								{
+									"key": "genres[]",
+									"value": "Thriller",
+									"type": "text"
+								},
+								{
+									"key": "crews[0][role]",
+									"value": "Director",
+									"type": "text"
+								},
+								{
+									"key": "crews[0][name]",
+									"value": "Matthew",
+									"type": "text"
+								},
+								{
+									"key": "crews[0][family]",
+									"value": "Vaughn",
+									"type": "text"
+								},
+								{
+									"key": "crews[0][birthdate]",
+									"value": "1971-01-02",
+									"type": "text"
+								},
+								{
+									"key": "crews[1][role]",
+									"value": "Writer",
+									"type": "text"
+								},
+								{
+									"key": "crews[1][name]",
+									"value": "Jason",
+									"type": "text"
+								},
+								{
+									"key": "crews[1][family]",
+									"value": "Fuchs",
+									"type": "text"
+								},
+								{
+									"key": "crews[1][birthdate]",
+									"value": "1986-01-02",
+									"type": "text"
+								},
+								{
+									"key": "crews[2][role]",
+									"value": "Stars",
+									"type": "text"
+								},
+								{
+									"key": "crews[2][name]",
+									"value": "Dua",
+									"type": "text"
+								},
+								{
+									"key": "crews[2][family]",
+									"value": "Lipa",
+									"type": "text"
+								},
+								{
+									"key": "crews[2][birthdate]",
+									"value": "1986-01-02",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/movie",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"movie"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Argylle\",\r\n    \"rank\": \"60\",\r\n    \"year\": \"2024\",\r\n    \"description\": \"A reclusive author who writes espionage novels about a secret agent and a global spy syndicate realizes the plot of the new book she's writing starts to mirror real-world events, in real time.\",\r\n    \"slug\": \"argylle\",\r\n    \"crews\": [\r\n        {\r\n            \"name\": \"Matthew\",\r\n            \"family\": \"Vaughn\",\r\n            \"role\": \"Director\",\r\n            \"birthdate\": \"1971-01-02\"\r\n        },\r\n        {\r\n            \"name\": \"Jason\",\r\n            \"family\": \"Fuchs\",\r\n            \"role\": \"Writer\",\r\n            \"birthdate\": \"1986-01-02\"\r\n        },\r\n        {\r\n            \"name\": \"Dua\",\r\n            \"family\": \"Lipa\",\r\n            \"role\": \"Stars\",\r\n            \"birthdate\": \"1986-01-02\"\r\n        }\r\n    ],\r\n    \"genres\": [\r\n        {\r\n            \"name\": \"Action\",\r\n            \"slug\": \"action\"\r\n        },\r\n        {\r\n            \"name\": \"Thriller\",\r\n            \"slug\": \"thriller\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/movie/62",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"movie",
+								"62"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/api/v1/movie/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"movie",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

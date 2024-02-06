@@ -1,0 +1,52 @@
+[
+    {
+        "title":"Migration",
+        "rank":67,
+        "year":"2024",
+        "description":"A family of ducks try to convince their overprotective father to go on the vacation of a lifetime.",
+        "genres":["Animation"],
+        "crews": [
+            {
+                "name": "Benjamin",
+                "family":"Renner",
+                "role": "Directors",
+                "birthdate":"1969-12-11"
+            },
+            {
+                "name": "Guylo",
+                "family":"Homsy",
+                "role": "Directors",
+                "birthdate":"1975-12-11"
+            },
+            {
+                "name": "Mike",
+                "family":"White",
+                "role": "Writers",
+                "birthdate":"1975-12-11"
+            },
+            {
+                "name": "Benjamin",
+                "family":"Renner",
+                "role": "Writers",
+                "birthdate":"1969-12-11"
+            },
+
+            {
+                "name": "Kumail",
+                "family":"Nanjiani",
+                "role": "Stars",
+                "birthdate":"1969-12-11"
+            }  ,          {
+                "name": "Tresi",
+                "family":"Gazal",
+                "role": "Stars",
+                "birthdate":"1969-12-11"
+            }  ,          {
+                "name": "Elizabeth",
+                "family":"Banks",
+                "role": "Stars",
+                "birthdate":"1969-12-11"
+            }
+        ]
+    }
+]
